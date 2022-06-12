@@ -595,7 +595,25 @@ btn.addEventListener('click', () => {
     if(inputRect.y == 717.6875) {
       icon.style.marginTop = '453px';
     } else {
-      icon.style.marginTop = '477px';
+      icon.style.marginTop = '478px';
     }
   }, 10);
+});
+
+
+// Swapping Input and Result types
+const swap = document.querySelector('.switch');
+
+swap.addEventListener('click', (e) => {
+  const inputType = document.querySelector('#inputType');
+  const resultType = document.querySelector('#resultType');
+
+  let inputTemp;
+  let resultTemp;
+
+  inputTemp = inputType.selectedIndex;
+  resultTemp = resultType.selectedIndex;
+
+  resultType.selectedIndex = inputTemp;
+  inputType.selectedIndex = resultTemp;
 });

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube Converter | bencodes</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/youtube.css">
+</head>
+<body>
+  <div class="hero">
+    <nav>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="currency.html">Currency</a></li>
+        <li><a href="weight.html">Weight</a></li>
+        <li><a href="speed.html">Speed</a></li>
+        <li><a href="distance.html">Distance</a></li>
+        <li><a class="active" href="youtube.html">YouTube</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="heroContainer">
+      <h1 class="heroHeading">Youtube Converter</h1>
+    </div>
+
+    <div id="particles-js"></div>
+
+    <div class="content">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ffffff" fill-opacity="1" d="M0,32L120,58.7C240,85,480,139,720,160C960,181,1200,171,1320,165.3L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+      </svg>
+      <div class="contentContainer">
+        <div class="input">
+          <label for="input" id="inputLabel">Link</label>
+          <input type="text" inputmode="decimal" autocomplete="off" placeholder="Enter Video Link" id="input">
+
+          <label for="inputType">Format</label>
+          <select id="inputType">
+            <option selected disabled>Select Video Format</option>
+            <option value="mp3" disabled>MP3</option>
+            <option value="m4a">M4A</option>
+            <option value="mp4" disabled>MP4</option>
+            <option value="wav" disabled>WAV</option>
+          </select>
+        </div>
+
+        <div class="result">
+          <div class="resultContainer">
+            <p class="resultP">Your Converted Youtube Video =</p>
+            <h1 class="resultValue">Click Convert</h1>
+          </div>
+
+          <button id="resultBtn">Convert</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <script src="../js/youtube.js" defer></script>
+  <!-- Particles -->
+  <script src="../../node_modules/ParticleJS/particles.js" defer></script>
+  <script src="../js/particles.js" defer></script>
+  
+</body>
+</html>

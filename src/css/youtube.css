@@ -41,7 +41,7 @@
 }
 
 #input {
-  width: 15vw;
+  width: 25vw;
   padding: 10px;
   border-radius: 5px;
   border: 2px solid #ddd;
@@ -57,11 +57,11 @@
 label {
   position: relative;
   bottom: 40px;
-  left: 21px;
+  left: 37px;
 }
 
 #inputLabel {
-  left: -27px;
+  left: -39px;
 }
 
 .switch {
@@ -89,7 +89,7 @@ label {
 
 
 #inputType {
-  width: 15vw;
+  width: 25vw;
   padding: 10px;
   border-radius: 5px;
   border: 2px solid #ddd;
