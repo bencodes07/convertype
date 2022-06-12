@@ -1,4 +1,13 @@
 
+:root {
+  --color1: #5690e9;
+  --color2: #84ceeb;
+  --color3: #5ab9ea;
+  --color4: #c1c8e4;
+  --color5: #8860d0;
+  --text-color: rgb(126, 126, 126);
+}
+
 .contentContainer {
   display: flex;
   justify-content: center;
@@ -7,18 +16,119 @@
   background-color: white;
   position: absolute;
   top: -400px;
-  width: 70vw;
+  width: 65vw;
   height: 400px;
   box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
   z-index: 100;
   margin-left: 50%;
   transform: translateX(-50%);
+  border-radius: 15px;
 }
 
 .content {
-  height: 20vh;
+  height: 40vh;
 }
 
 .heroHeading {
   margin-top: 50px;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#input {
+  width: 15vw;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  outline: none;
+  margin-left: -70px;
+  height: 40px;
+}
+
+#input:focus {
+  border: 2px solid var(--color1);
+}
+
+label {
+  position: relative;
+  bottom: 40px;
+  left: 21px;
+}
+
+#inputLabel {
+  left: -27px;
+}
+
+.switch {
+  display: inline-flex;
+  background: none;
+  border: 2px solid #dddddd;
+  border-radius: 50%;
+  padding: 15px;
+  z-index: 1000;
+  width: 41px;
+  height: 41px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.switch > svg {
+  margin-top: 478px;
+  margin-left: -6px;
+  width: 20px;
+  height: 20px;
+  max-height: 20px;
+  min-height: 20px;
+  z-index: 100;
+}
+
+
+#inputType {
+  width: 15vw;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  outline: none;
+  margin-left: -20px;
+  height: 40px;
+}
+
+#resultType {
+  width: 15vw;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  outline: none;
+  height: 40px;
+}
+
+#resultBtn {
+  position: relative;
+  width: 80px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid var(--color1);
+  background: var(--color1);
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  width: 50vw;
+  position: relative;
+}
+
+
+@media screen and (max-width: 906px) {
+  
 }
