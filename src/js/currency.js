@@ -53,3 +53,30 @@ swap.addEventListener('click', (e) => {
   resultType.selectedIndex = inputTemp;
   inputType.selectedIndex = resultTemp;
 });
+
+
+const resultVar = document.querySelector('.result');
+
+window.addEventListener('resize', (e) => {
+  setTimeout(() => {
+    let inputRect = document.querySelector('.input').getBoundingClientRect().width;
+    resultVar.style.width = inputRect + 'px';
+    console.log('orientationchange');
+  }, 10);
+});
+
+window.addEventListener('load', (e) => {
+  setTimeout(() => {
+    let inputRect = document.querySelector('.input').getBoundingClientRect().width;
+    resultVar.style.width = inputRect + 'px';
+    console.log('orientationchange');
+  }, 10);
+});
+
+window.addEventListener('orientationchange', () => {
+  setTimeout(() => {
+    let inputRect = document.querySelector('.input').getBoundingClientRect().width;
+    resultVar.style.width = inputRect + 'px';
+    console.log('orientationchange');
+  }, 10);
+});
