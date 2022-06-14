@@ -3,8 +3,20 @@ const result = document.querySelector('.resultValue');
 const resultP = document.querySelector('.resultP');
 var resultValue;
 
+function disableButton() {
+  // Disable Button for 5sec
+  resultBtn.disabled = true;
+  resultBtn.style.cursor = 'not-allowed';
+  setTimeout(() => {
+    resultBtn.disabled = false;
+    resultBtn.style.cursor = 'pointer';
+  }, 5000);
+}
 
 resultBtn.addEventListener('click', () => {
+
+  // Get Currency Values
+
   const from = document.getElementById('from').value;
   const to = document.getElementById('to').value;
   const amount = document.getElementById('amount').value;
