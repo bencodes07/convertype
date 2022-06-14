@@ -10,7 +10,7 @@ function disableButton() {
   setTimeout(() => {
     resultBtn.disabled = false;
     resultBtn.style.cursor = 'pointer';
-  }, 5000);
+  }, 4000);
 }
 
 resultBtn.addEventListener('click', () => {
