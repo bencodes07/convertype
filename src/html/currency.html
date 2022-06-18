@@ -11,7 +11,7 @@
 <body>
   <div class="hero">
     <nav>
-      <ul>
+      <ul class="navList">
         <li><a href="../../index.html">Home</a></li>
         <li><a class="active" href="currency.html">Currency</a></li>
         <li><a href="weight.html">Weight</a></li>
@@ -19,6 +19,10 @@
         <li><a href="distance.html">Distance</a></li>
         <li><a href="youtube.html">YouTube</a></li>
       </ul>
+
+      <button class="hamburger">
+        <div class="line"></div>
+      </button>
     </nav>
 
 
@@ -86,5 +90,23 @@
   <!-- Particles -->
   <script src="../../node_modules/ParticleJS/particles.js" defer></script>
   <script src="../js/particles.js" defer></script>
+
+  <script>
+    const hamburgerSwitch = document.querySelector(".hamburger");
+    const smallerNav = document.querySelector('.navList');
+    hamburgerSwitch.addEventListener('click', () => {
+      hamburgerSwitch.classList.toggle('active');
+      smallerNav.classList.toggle('active');
+
+      document.body.classList.toggle('navListActive');
+
+      if(hamburgerActive == false) {
+        hamburgerActive = true;
+      } else {
+        hamburgerActive = false;
+      }
+    });
+  </script>
+
 </body>
 </html>

@@ -105,7 +105,7 @@ nav a.active:after {
   z-index: 10;
 }
 
-.heroHeading {
+.heroHeading, .heading {
   color: white;
   z-index: 10;
   font-weight: 500;
@@ -195,4 +195,80 @@ nav a.active:after {
 .contentContainer p, .contentContainer h2 {
   color: var(--text-color);
   z-index: 100;
+}
+
+.hamburger {
+  display: none;
+  width: 30px;
+  height: 30px;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 10vw;
+}
+
+.hamburger .line,
+.hamburger:after,
+.hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--page-text);
+  margin-top: 6px;
+  border-radius: 1rem;
+  transition: all 0.5s;
+  z-index: 1000;
+  background-color: #fff;
+}
+
+.hamburger.active .line {
+  transform: translateX(50%);
+  opacity: 0;
+}
+
+.hamburger.active:before {
+  transform: rotate(-45deg) translate(-10px, 5px);
+}
+
+.hamburger.active:after {
+  transform: rotate(45deg) translate(-9px, -5px);
+}
+
+/* Mobile Design */
+
+@media screen and (max-width: 1124px) {
+  .heroHeading {
+    position: relative;
+    top: -70px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hamburger {
+    display: block;
+    transition: right 0.3s ease;
+  }
+
+  .navList {
+    width: 100%;
+    position: fixed;
+    left: 200%;
+    transition: all 0.35s ease;
+    flex-direction: column;
+    align-items:flex-end;
+    margin-top: 20px;
+  }
+
+  .navList.active {
+    left: -10%;
+  }
+
+  .hamburger.active {
+    right: 175px;
+  }
 }
