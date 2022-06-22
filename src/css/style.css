@@ -414,10 +414,22 @@ footer {
   .switch > svg {
     margin-top: 495px !important;
   }
+
+  .info {
+    bottom: -90px !important;
+  }
 }
 
 @media screen and (max-width:480px) {
   .hero svg {
     margin-top: 70px;
+  }
+
+  .info {
+    display: none;
+  }
+
+  .contentContainer {
+    margin-top: 30px;
   }
 }
