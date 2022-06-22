@@ -3,7 +3,7 @@
 const getBtn = document.querySelector('.getStarted');
 
 getBtn.addEventListener('click', () => {
-  window.open('https://github.com/bencodes07/convertype', '_blank');
+  window.open('https://github.com/bencodes07/convertypeExtension', '_blank');
 });
 
 // ----- Hamburger Menu ----- //
@@ -22,3 +22,4 @@ hamburgerSwitch.addEventListener('click', () => {
     hamburgerActive = false;
   }
 });
+

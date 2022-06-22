@@ -173,11 +173,7 @@ nav a.active:after {
   background-color: #fff;
 }
 
-@media screen and (max-width: 1920px) {
-  .content {
-    margin-top: 80vh;
-  }
-}
+
 
 .hero svg {
   min-height: 500px;
@@ -242,40 +238,6 @@ nav a.active:after {
   transform: rotate(45deg) translate(-9px, -5px);
 }
 
-/* Mobile Design */
-
-@media screen and (max-width: 1124px) {
-  .heroHeading {
-    position: relative;
-    top: -70px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .hamburger {
-    display: block;
-    transition: right 0.3s ease;
-  }
-
-  .navList {
-    width: 100%;
-    position: fixed;
-    left: 200%;
-    transition: all 0.35s ease;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: 20px;
-  }
-
-  .navList.active {
-    left: -10%;
-  }
-
-  .hamburger.active {
-    right: 175px;
-  }
-}
-
 
 footer {
   width: 100vw;
@@ -292,7 +254,7 @@ footer {
   align-items: center;
   flex-direction: column;
   color: #fff;
-  box-shadow: 0px -3px 15px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px -3px 30px 1px rgba(0, 0, 0, 0.3);
 }
 
 .botFooter {
@@ -328,3 +290,60 @@ footer {
   text-decoration: none;
   transition: all 0.3s ease;
 }
+
+
+/* Mobile Design */
+
+@media screen and (max-width: 1920px) {
+  .content {
+    margin-top: 80vh;
+  }
+}
+
+/* MacBook Pro ☑*/
+
+@media screen and (max-width:1280px) {
+  .hero svg {
+    margin-top: 50px;
+  }
+
+  .heroHeading {
+    position: relative;
+    top: -100px;
+  }
+}
+
+
+@media screen and (max-width: 1124px) {
+  .heroHeading {
+    position: relative;
+    top: -70px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hamburger {
+    display: block;
+    transition: right 0.3s ease;
+  }
+
+  .navList {
+    width: 100%;
+    position: fixed;
+    left: 200%;
+    transition: all 0.35s ease;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 20px;
+  }
+
+  .navList.active {
+    left: -10%;
+  }
+
+  .hamburger.active {
+    right: 175px;
+  }
+}
+
+
