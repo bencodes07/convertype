@@ -322,6 +322,10 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+  .heroHeading {
+    text-align: center;
+  }
+
   .hamburger {
     display: block;
     transition: right 0.3s ease;
@@ -344,6 +348,76 @@ footer {
   .hamburger.active {
     right: 175px;
   }
+
+  .contentContainer {
+    text-align: center;
+  }
+
+  .input {
+    flex-direction: column !important;
+  }
+
+  label {
+    display: none;
+  }
+
+  #input, #amount, #resultType, #to, #from, #inputType {
+    margin-left: -20px !important;
+    width: 35vw !important;
+  }
+
+  #input, #amount {
+    margin-bottom: 20px;
+    margin-top: -60px;
+  }
+
+  #from, #inputType {
+    margin-bottom: 10px;
+  }
+
+  #to, #resultType {
+    margin-top: 10px;
+  }
+
+  .switch {
+    margin-left: -20px !important;
+  }
+
+  .switch > svg {
+    margin-top: 507px !important;
+  }
+
+  .resultContainer {
+    width: 35vw;
+    position: absolute;
+    left: calc(50% - 10px);
+    transform: translateX(-50%);
+    margin-top: 45px;
+  }
+
+  .resultContainer p {
+    display: none;
+  }
+
+  .resultContainer h1 {
+    font-size: 1.2rem;
+  }
+
+  #resultBtn {
+    top: -35px;
+    width: 35vw !important;
+    left: calc(50% - 10px);
+    transform: translateX(-50%);
+    margin-left: 0;
+  }
+
+  .switch > svg {
+    margin-top: 495px !important;
+  }
 }
 
-
+@media screen and (max-width:480px) {
+  .hero svg {
+    margin-top: 70px;
+  }
+}
